@@ -38,7 +38,7 @@ data = csv.reader(f)
 next(data)
 f = open('result.csv', 'w', newline='')
 writer = csv.writer(f)
-writer.writerow(["name",'dainly', 'week',"month","count"])
+writer.writerow(["name",'a day', 'a week',"a month"])
 for i in data:
     username = i[2]
 
@@ -62,4 +62,4 @@ for i in data:
 
     
     writer = csv.writer(f)
-    writer.writerow([i[0], daily_count,weekly_count,monthly_count])
+    writer.writerow([i[0], daily_count,weekly_count,monthly_count,])
